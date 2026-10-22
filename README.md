@@ -1,15 +1,14 @@
-# FMEA Studio — Mini Automotive FMEA Analyzer
+# FMEA Studio — Automotive FMEA Analyzer
 
-A Streamlit prototype for editing a small automotive Failure Mode and Effects Analysis (FMEA) register.
+A Streamlit application for editing an automotive Failure Mode and Effects Analysis (FMEA) register.
 
 ## Features
-- Editable failure register: edit all fields, add rows, and delete rows in the table
-- Add blank failure rows or clear the register
+- Editable failure register: edit fields, add rows, and delete rows
 - Live RPN calculation (Severity × Occurrence × Detection)
-- Configurable illustrative review threshold
+- Configurable review threshold
 - Risk overview metrics, ranked failure modes, and interactive charts
-- CSV export of analyzed records
-- Example automotive failure modes for demonstration
+- CSV export
+- Starter automotive failure modes that can be replaced
 
 ## Run locally
 Python 3.10+ recommended.
@@ -39,5 +38,5 @@ streamlit run app.py
 2. In Streamlit Community Cloud, create an app from that repository.
 3. Set the main file path to `app.py` and deploy.
 
-## Important limitation
-This is an educational prototype with illustrative examples. RPN is a prioritization aid, not an ASIL determination, safety case, or replacement for company-approved FMEA procedures, rating criteria, or ISO 26262 safety analysis. Example data is synthetic and must not be presented as validated vehicle data.
+## Engineering note
+RPN is a prioritization aid and should not be the sole basis for accepting risk. Review high-severity failure modes independently and follow applicable organizational procedures for formal engineering decisions.
