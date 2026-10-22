@@ -109,7 +109,7 @@ if "editor_version_v3" not in st.session_state:
 
 with st.sidebar:
     st.markdown("## 🛡️ FMEA Studio")
-    st.markdown('<span class="pill">AUTOMOTIVE</span><span class="pill">RPN ANALYSIS</span>', unsafe_allow_html=True)
+    st.markdown('<span class="pill">RPN ANALYSIS</span>', unsafe_allow_html=True)
     st.caption("Failure Mode & Effects Analysis workspace")
     st.divider()
     st.markdown("### Analysis settings")
